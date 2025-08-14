@@ -1,23 +1,21 @@
 version: "3.9"
 
 services:
-  python-api:
+  frontend:
     build:
-      context: .
+      context: ./frontend
       dockerfile: Dockerfile
-    container_name: python-api
+    container_name: electionguard-frontend
     ports:
-      - "5000:5000"
+      - "3000:3000"
     restart: unless-stopped
     environment:
-      FLASK_ENV: production
-      FLASK_APP: api.py
-      FLASK_RUN_HOST: 0.0.0.0
-      FLASK_RUN_PORT: 5000
-      GUNICORN_TIMEOUT: 120
-      GUNICORN_WORKERS: 4
+      - NODE_ENV=production
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
       interval: 30s
-      timeout: 3s
+      timeout: 10s
       retries: 3
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
