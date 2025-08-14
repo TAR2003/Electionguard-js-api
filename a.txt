@@ -1,0 +1,24 @@
+
+---------------
+Data: combine_decryption_shares
+party_names: list of (str)
+candidate_names: list of (str)
+joint_public_key: str
+commitment_hash: str
+ciphertext_tally: str
+submitted_ballots: list of (str)
+guardian_data: list of (str)
+available_guardian_ids: list of (str)
+available_guardian_public_keys: list of (str)
+available_tally_shares: list of (str)
+available_ballot_shares: list of (str)
+missing_guardian_ids: list of (str)
+compensating_guardian_ids: list of (str)
+compensated_tally_shares: list of (str)
+compensated_ballot_shares: list of (str)
+quorum: int
+number_of_guardians: int
+End of combine_decryption_shares
+------------------
+
+
