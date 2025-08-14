@@ -1,0 +1,12 @@
+{
+    "number_of_guardians": 5,
+    "quorum": 3,
+    "party_names": [
+        "Democratic Party",
+        "Republican Party"
+    ],
+    "candidate_names": [
+        "Alice Johnson",
+        "Bob Smith"
+    ]
+}
