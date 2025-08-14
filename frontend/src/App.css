@@ -1,0 +1,388 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ElectionGuard Frontend Styles */
+.app {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Styles */
+.navigation {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.nav-logo h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-logo {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+  color: #2c3e50;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+/* Home Page Styles */
+.home-container {
+  text-align: left;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
+.hero-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-description {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.service-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.service-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.tech-info {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.tech-info h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.tech-info ul {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.tech-info li {
+  margin-bottom: 0.5rem;
+}
+
+/* Service Component Styles */
+.service-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.service-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
+.service-header h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.editor-container {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.primary-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.primary-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.secondary-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Results and Error Styles */
+.success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.success h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.error h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.result-container {
+  margin-top: 2rem;
+}
+
+.result-container h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.result-editor {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Loading Styles */
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.loading h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.loading p {
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .nav-links {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+}
