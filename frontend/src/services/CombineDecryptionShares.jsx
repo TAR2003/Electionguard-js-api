@@ -4,7 +4,7 @@ import { SERVICES } from '../data/services';
 
 function CombineDecryptionShares({ pyodide }) {
   return <ServiceComponent 
-    serviceName="combine-decryption-shares"
+    serviceName="combineDecryptionShares"
     serviceConfig={SERVICES.combineDecryptionShares}
     pyodide={pyodide}
   />;

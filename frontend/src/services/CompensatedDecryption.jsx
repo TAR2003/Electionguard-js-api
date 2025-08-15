@@ -4,7 +4,7 @@ import { SERVICES } from '../data/services';
 
 function CompensatedDecryption({ pyodide }) {
   return <ServiceComponent 
-    serviceName="compensated-decryption"
+    serviceName="compensatedDecryption"
     serviceConfig={SERVICES.compensatedDecryption}
     pyodide={pyodide}
   />;

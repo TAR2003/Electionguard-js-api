@@ -4,7 +4,7 @@ import { SERVICES } from '../data/services';
 
 function CreateEncryptedTally({ pyodide }) {
   return <ServiceComponent 
-    serviceName="create-encrypted-tally"
+    serviceName="createEncryptedTally"
     serviceConfig={SERVICES.createEncryptedTally}
     pyodide={pyodide}
   />;

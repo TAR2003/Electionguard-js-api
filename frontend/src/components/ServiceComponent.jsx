@@ -9,27 +9,8 @@ function ServiceComponent({ serviceName, serviceConfig, pyodide }) {
 
   useEffect(() => {
     // Load sample data when component mounts
-    if (serviceConfig && serviceConfig.sampleRequest) {
-      setJsonInput(JSON.stringify(serviceConfig.sampleRequest, null, 2));
-    } else {
-      // Fallback sample data if service config is missing
-      setJsonInput(JSON.stringify({
-        "message": `Sample data for ${serviceName}`,
-        "service": serviceName
-      }, null, 2));
-    }
-  }, [serviceConfig, serviceName]);
-
-  if (!serviceConfig) {
-    return (
-      <div className="service-container">
-        <div className="error">
-          <h3>Service Configuration Error</h3>
-          <p>Service configuration for "{serviceName}" not found. Please check the services configuration.</p>
-        </div>
-      </div>
-    );
-  }
+    setJsonInput(JSON.stringify(serviceConfig.sampleRequest, null, 2));
+  }, [serviceConfig.sampleRequest]);
 
   const processRequest = async () => {
     if (!pyodide) {

@@ -4,7 +4,7 @@ import { SERVICES } from '../data/services';
 
 function PartialDecryption({ pyodide }) {
   return <ServiceComponent 
-    serviceName="partial-decryption"
+    serviceName="partialDecryption"
     serviceConfig={SERVICES.partialDecryption}
     pyodide={pyodide}
   />;

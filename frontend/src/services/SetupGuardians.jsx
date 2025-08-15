@@ -4,7 +4,7 @@ import { SERVICES } from '../data/services';
 
 function SetupGuardians({ pyodide }) {
   return <ServiceComponent 
-    serviceName="setup-guardians"
+    serviceName="setupGuardians"
     serviceConfig={SERVICES.setupGuardians}
     pyodide={pyodide}
   />;

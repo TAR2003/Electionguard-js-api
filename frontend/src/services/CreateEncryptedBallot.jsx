@@ -4,7 +4,7 @@ import { SERVICES } from '../data/services';
 
 function CreateEncryptedBallot({ pyodide }) {
   return <ServiceComponent 
-    serviceName="create-encrypted-ballot"
+    serviceName="createEncryptedBallot"
     serviceConfig={SERVICES.createEncryptedBallot}
     pyodide={pyodide}
   />;
